@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.contaner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('game_background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+body {
+    overflow: hidden;
+}
+
+.monkey {
+    position: absolute;
+    background-image: url('dino.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 100px;
+    left: 25vw;
+    bottom: 0px;
+}
+
+.tortose {
+    position: absolute;
+    background-image: url('dragon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 140px;
+    height: 90px;
+    bottom: 0px;
+    left: 50vw;
+}
+
+.gameover {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    font-size: 90px;
+    color: rgb(3, 3, 3);
+    top: 25vh;
+    left: 35vw;
+}
+.playagain{
+    position: absolute;
+    left: 5vw;
+    top: 3vh;
+    font-weight: 600;
+    padding: 5px;
+    background-color: rgb(8, 164, 8);
+    border-radius: 10px;
+    box-shadow: 10px;
+    visibility: hidden;
+}
+.playagain a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+#scorecontaner {
+    position: absolute;
+    right: 5vw;
+    top: 3vh;
+    font-size: 20px;
+    color: black;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px ;
+}
+
+.animatemonkey {
+    animation: monkey 0.6s linear;
+}
+
+.tortoseAni {
+    animation: tortose 5s linear infinite;
+}
+
+@keyframes monkey {
+    0% {
+        border: 0px;
+    }
+
+    50% {
+        bottom: 250px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+
+}
+
+@keyframes tortose {
+    0% {
+        left: 100vw;
+    }
+
+    100% {
+        left: -10vw;
+    }
+}
+
+@media screen and (max-width:1100px) and (min-width:800px){
+    .monkey {
+        width: 130px;
+        height: 80px;
+        left: 15vw;
+        bottom: 0px;
+        background-size: contain;
+    }
+
+    .tortose {
+        width: 90px;
+        height: 70pa;
+        left: 60vw;
+        bottom: 0px;
+    }
+    .gameover {
+        position: absolute;
+        font-size: 80px;
+        color: rgb(3, 3, 3);
+        top: 15vh;
+        left: 25vw;
+    }
+    .playagain{
+        font-weight: 500;
+        padding: 0px;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:650px) {
+    .monkey {
+        width: 120px;
+        height: 70px;
+        left: 15vw;
+        bottom: 0px;
+        background-size: contain;
+    }
+
+    .tortose {
+        width: 83px;
+        height: 70pa;
+        left: 60vw;
+        bottom: -24px;
+    }
+    .gameover {
+        position: absolute;
+        font-size: 70px;
+        color: rgb(3, 3, 3);
+        top: 15vh;
+        left: 25vw;
+    }
+    .playagain{
+        font-weight: 400;
+        padding: 0px;
+        visibility: hidden;
+    }
+    }
+    @keyframes monkey {
+        0% {
+            border: 0px;
+        }
+    
+        50% {
+            bottom: 150px;
+        }
+    
+        100% {
+            bottom: 0px;
+        }
+    
+    }
+@media screen and (max-width:650px) and (min-width:300px) {
+    .monkey {
+        width: 70px;
+        height: 55px;
+        left: 20vw;
+        bottom: -10px;
+        background-size: contain;
+    }
+
+    .tortose {
+        width: 50px;
+        height: 40px;
+        left: 65vw;
+        bottom: 0px;
+    }
+    .gameover {
+        position: absolute;
+        font-size: 50px;
+        color: rgb(3, 3, 3);
+        top: 15vh;
+        left: 30vw;
+    }
+    .playagain{
+        font-weight: 400;
+        padding: 0px;
+        visibility: hidden;
+    }
+    #scorecontaner{
+        font-size: 15px;
+    }
+    @keyframes monkey {
+        0% {
+            border: 0px;
+        }
+    
+        50% {
+            bottom: 150px;
+        }
+    
+        100% {
+            bottom: 0px;
+        }
+    
+    }
+}
+@media screen and (max-width:300px) {
+    .monkey {
+        width: 70px;
+        height: 55px;
+        left: 20vw;
+        bottom: -10px;
+        background-size: contain;
+    }
+
+    .tortose {
+        width: 50px;
+        height: 40px;
+        left: 65vw;
+        bottom: 0px;
+    }
+    .gameover {
+        position: absolute;
+        font-size: 30px;
+        color: rgb(3, 3, 3);
+        top: 15vh;
+        left: 15vw;
+    }
+    .playagain{
+        font-weight: 400;
+        padding: 0px;
+        visibility: hidden;
+    }
+    #scorecontaner{
+        font-size: 15px;
+    }
+    .contaner{
+        background-image: url('bac2.jpeg');
+    }
+    @keyframes monkey {
+        0% {
+            border: 0px;
+        }
+    
+        50% {
+            bottom: 170px;
+        }
+    
+        100% {
+            bottom: 0px;
+        }
+    
+    }
+}
